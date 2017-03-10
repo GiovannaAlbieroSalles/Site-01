@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="estilos.css" />
+    <title>Giovanna Aula Desenvolvimento Web - 10/03/2017</title>
+  </head>
+
+  <header>
+   <h1 class="title">Bem-vindo a página sobre CSS</h1>
+   /* Colocar uma imagem */
+  </header>
+
+  <body>
+  <h2 class="title">Explore o site:</h2>
+  <ul>
+    <li class="text">
+      <a href="file:///C:/Users/IFPRJogos/Documents/Site-01-gh-pages/home.html">
+        <h5>Voltar para a Home Page</h5>
+      </a>
+    </li>
+    <li>
+      <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Seletores_CSS">
+        <h5>Seletores Básicos</h5>
+          <p class="textA">
+              Seletor por tag escolhe todos os elementos que correspondem ao nome fornecido.
+              <br />
+              Sintaxe: tagname
+              <br />
+              Seletor por classe escolhe elementos baseados no valor de seu atributo classe.
+              <br />
+              Sintaxe: .classname
+              <br />
+              Seletor por ID escolhe nós baseados no valor do atributo id. Deve existir apenas
+              um elemento com o mesmo ID no mesmo documento.
+              <br />
+              Sintaxe: #idname
+              <br />
+              Seletores universais irá escolher todos os nós. Ele tamém existe em um namespace
+              único e em uma variante de todo o namespace também.
+              <br />
+              Sintaxe: * ns|* *|*
+              <br />
+              Seletores por atributo ira escolher nós baseados no valor de um de seus atributos,
+              ou até mesmo pelo próprio atributo.
+              <br />
+              Sintaxe: [attr] [attr=value] [attr~=value] [attr|=value] [attr^=value] [attr$=value] [attr*=value]
+        </p>
+      </a>
+    </li>
+    <li>
+      <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Seletores_CSS">
+        <h5>Combinadores</h5>
+          <p class="textA">
+            Seletores de irmãos adjacentes
+            <br />
+            O combinador '+' seleciona os nós que seguem imediatamente o elemento especificado anteriormente.
+            <br />
+            Sintaxe: A + B
+            <br />
+            Seletores gerais de irmãos
+            <br />
+            O combinador '~' seleciona os nós que seguem (não necessariamente imediatamente) o elemento e
+            specificado anteriormente, se ambos os elementos compartilham o mesmo pai.
+            <br />
+            Sintaxe: A ~ B
+            <br />
+            Seletor de filhos
+            <br />
+            O combinador '>' selecina nós que são filhos diretos do elemento especificado anteriormente.
+            <br />
+            Sintaxe: A > B
+            <br />
+            Seletor de descendentes
+            <br />
+            O combinador ' ' seleciona os nós que são filhos do elemento especificado anteriormente
+            (não é necessário que seja um filho direto).
+            <br />
+            Sintaxe: A B
+        </p>
+      </a>
+    </li>
+    <li>
+      <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Seletores_CSS">
+        <h5>Pseudo-elementos</h5>
+          <p class="textA">
+            Pseudo-elementos são asbtrações da árvore que representa entidades além do que o HTML faz.
+            Por exemplo, o HTML não tem um elemento que descreve a primeira letra ou linha de um
+            parágrafo, ou o marcados de um lista. Os pseudo-elementos representam essas entidades e
+            permitem que as regras CSS sejam associadas a elas. Desta forma, essas entidades podem ser
+            denominadas independentemente.
+        </p>
+      </a>
+    </li>
+    <li>
+      <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Seletores_CSS">
+        <h5>Pseudo-classes</h5>
+          <p class="textA">
+            Pseudo-classes permitem selecionar elementos baseados em indormações que não estão
+            contidas na árvore de documentos como um estado ou que é particularmente complexa de extrair.
+            Por exemplo, eles correspondem se um link foi visitado anteriormente ou não.
+        </p>
+      </a>
+    </li>
+    <li>
+      <a href="hhttps://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning">
+        <h5>Posicionamento</h5>
+          <p class="textA">
+            Permite que você retire elementos do fluxo normal do layout do documento
+            e faça com que eles se comportem de forma diferente, por exemplo, sentados um sobre o outro
+            ou sempre permanecendo no mesmo local dentro da janela de exibição do navegador. Este artigo
+            explica os diferentes valores de posição e como usá-los.
+        </p>
+      </a>
+    </li>
+    <li>
+      <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning">
+        <h6>Relativo</h6>
+        <p class="textA">
+          Uma vez que o elemento posicionado tomou seu lugar no fluxo de layout normal, você pode então
+          modificar sua posição final, incluindo tornando-se sobreposição de outros elementos na página.
+        </p>
+      </a>
+    </li>
+    <li>
+      <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning">
+        <h6>Absoluto</h6>
+        <p class="textA">
+           Fixa um elemento no lugar em relação ao elemento &lthtml&gt ou seu ancestral mais próximo posicionado
+        </p>
+      </a>
+    </li>
+    <li>
+      <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning">
+        <h6>Estático</h6>
+        <p class="textA">
+          Posicionamento estático é o padrão que cada elemento recebe - apenas significa "colocar o
+          elemento em sua posição normal no fluxo de layout do documento - nada de especial para ver aqui".
+        </p>
+      </a>
+    </li>
+    <li>
+      <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning">
+        <h6>Fixo</h6>
+        <p class="textA">
+          Corrige um elemento no lugar em relação à própria janela de visualização do navegador. Isso
+          significa que você pode criar itens de interface do usuário úteis que são fixos no local, como
+          menus de navegação persistentes.
+        </p>
+      </a>
+    </li>
+    <li>
+      <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Box_model">
+        <h6>Box</h6>
+        <p class="textA">
+          Cada elemento dentro de um documento é estruturado como uma box retangular dentro do layout
+          do documento, o tamanho e "camadas de cebola" podem ser tweaked usando algumas propriedades
+          CSS específicas.
+        </p>
+      </a>
+    </li>
+    <li>
+      <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Box_model">
+        <h6>Padding</h6>
+        <p class="textA">
+          Representa a margem interna de uma caixa CSS - a camada entre a borda externa da caixa de
+          conteúdo ea borda interna da borda. O tamanho desta camada pode ser definido em todos os
+          quatro lados ao mesmo tempo com a propriedade de abreviação de preenchimento, ou um lado
+          de cada vez com as propriedades padding-top, padding-right, padding-bottom e padding-left.
+        </p>
+      </a>
+    </li>
+    <li>
+      <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Box_model">
+        <h6>Border</h6>
+        <p class="textA">
+          É uma camada distinta, sentada entre a borda externa do preenchimento e a borda interna da margem.
+          Por padrão, a borda tem um tamanho de 0 - tornando-o invisível - mas você pode definir a espessura,
+          estilo e cor da borda para torná-lo aparecer. A propriedade de abreviação de borda permite que
+          você defina todas estas em todos os quatro lados ao mesmo tempo, por exemplo borda: 1px preto sólido.
+          Isso pode ser dividido em inúmeras propriedades de largura diferentes para necessidades de estilo
+          mais específicas.
+        </p>
+      </a>
+    </li>
+    <li>
+      <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Box_model">
+        <h6>Margin</h6>
+        <p class="textA">
+          Representa a área externa que rodeia a caixa CSS, que empurra para cima contra outras caixas CSS no
+          layout. Ele se comporta como um preenchimento; A propriedade abreviada é margem e as propriedades
+          individuais são margin-top, margin-right, margin-bottom e margin-left.
+        </p>
+      </a>
+    </li>
+    <li class="text">
+      <a href="https://developer.mozilla.org">
+        <h5>Site fonte das informações</h5>
+      </a>
+    </li>
+  </ul>
+  </body>
+  Cada elemento dentro de um documento é estruturado como uma caixa retangular dentro do layout do documento, o tamanho e "camadas de cebola" podem ser tweaked usando algumas propriedades CSS específicas.
+
+</html>
